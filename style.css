@@ -133,11 +133,27 @@ textarea:not([rows]) {
 }
 
 .color-neutral-900{
-  color: var(--clr-neurtal-900);
+  color: var(--clr-neutral-900);
 }
 
 .color-neutral-100{
-  color: var(--clr-neurtal-100);
+  color: var(--clr-neutral-100);
+}
+
+.bg-color-primary-300{
+  background-color: var(--clr-primary-300);
+}
+
+.bg-color-primary-400{
+  background-color: var(--clr-primary-400);
+}
+
+.bg-color-neutral-900{
+  background-color: var(--clr-neutral-900);
+}
+
+.bg-color-neutral-100{
+  background-color: var(--clr-neutral-100);
 }
 
 .ff-primary{
@@ -200,18 +216,55 @@ h1,h2,h3,h4{
   font-family: var(--ff-heading);
 }
 
-body{
+.body-x{
   font-family: var(--ff-body);
   font-size: var(--fs-body);
+  background-color: var(--clr-neutral-100);
 }
 
 button{
   font-size: var(--fs-button);
+  background: transparent !important;
+  border: none !important;
 }
 
 nav{
   font-size: var(--fs-nav);
 }
 
+@media(max-width: 1000px){ /*When changing to mobile, we might have to adjust some things*/
+  .showOnDesktop{
+    display: none;
+  }
+  .showOnMobile{
+    display: flex;
+  }
+}
 
+@media(min-width: 1000px){ /*When changing to mobile, we might have to adjust some things*/
+  .showOnDesktop{
+    display: flex;
+  }
+  .showOnMobile{
+    display: none;
+  }
+}
+
+.nav-logo{
+  width: 86px;
+  height: 101px;
+}
+
+.uk-flag{
+  width: 40px;
+  height: 24px;
+}
+
+li{
+  list-style: none;
+}
+
+.radius-navbar{
+  border-radius: 16px
+}
 
