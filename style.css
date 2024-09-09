@@ -1,0 +1,217 @@
+/*CUSTOM PROPERTIES*/
+
+:root{
+/*Color scheme*/
+--clr-primary-300: #DDEEDF;/*Colors close to main color*/
+--clr-primary-400: #B6CDBD;/*Main color*/
+
+--clr-neutral-100: #F2F9F1;/*Lightest color*/
+--clr-neutral-900: #5C715E;/*Darkest color*/
+
+
+/*Font families*/
+
+--ff-primary: 'Be Vietnam Pro', sans-serif; 
+--ff-heading: var(--ff-primary);
+--ff-body: var(--ff-primary);
+
+
+/*Font weights*/
+
+--fw-thin: 100;
+--fw-extra-light: 200;
+--fw-light: 300;
+--fw-regular: 400;
+--fw-semi-bold: 500;
+--fw-bold: 700;
+--fw-heavy: 900;
+
+
+/*Font sizes*/
+
+
+--fs-400: 1,25 rem; /*Main font size, 1 rem=16px*/
+--fs-500: 2 rem;
+--fs-600: 2,25 rem;
+--fs-700: 2,5 rem;
+--fs-800: 3 rem; 
+--fs-900: 6 rem; /*Other font sizes, 900 for biggest, 100 for smallest*/
+
+--fs-body: var(--fs-400); /*Font size for elements*/
+--fs-primary-heading: var(--fs-900); /*Font size for heading*/
+--fs-nav: var(--fs-400); /*Font size for navbar*/
+--fs-button: var(--fs-800); /*Font size for button text*/
+ 
+}
+
+
+/*CSS RESET BY ANDY BELL*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+html, body{
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+
+
+/*UTILITY CLASSES*/
+
+.color-primary-300{
+  color: var(--clr-primary-300);
+}
+
+.color-primary-400{
+  color: var(--clr-primary-400);
+}
+
+.color-neutral-900{
+  color: var(--clr-neurtal-900);
+}
+
+.color-neutral-100{
+  color: var(--clr-neurtal-100);
+}
+
+.ff-primary{
+  font-family: var(--ff-primary);
+}
+
+.fw-thin{
+  font-weight: var(--fw-thin);
+}
+
+.fw-extra-light{
+  font-weight: var(--fw-extra-light);
+}
+
+.fw-light{
+  font-weight: var(--fw-light);
+}
+
+.fw-regular{
+  font-weight: var(--fw-regular);
+}
+
+.fw-semi-bold{
+  font-weight: var(--fw-bold);
+}
+
+.fw-bold{
+  font-weight: var(--fw-bold);
+}
+
+.fw-heavy{
+  font-weight: var(--fw-heavy);
+}
+
+.fs-400{
+  font-size: var(--fs-400);
+}
+
+.fs-500{
+  font-size: var(--fs-500);
+}
+
+.fs-600{
+  font-size: var(--fs-600);
+}
+
+.fs-700{
+  font-size: var(--fs-700);
+}
+
+.fs-800{
+  font-size: var(--fs-800);
+}
+
+.fs-900{
+  font-size: var(--fs-900);
+}
+
+h1,h2,h3,h4{
+  font-family: var(--ff-heading);
+}
+
+body{
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+}
+
+button{
+  font-size: var(--fs-button);
+}
+
+nav{
+  font-size: var(--fs-nav);
+}
+
+
+
