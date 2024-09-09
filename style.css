@@ -2,6 +2,8 @@
 
 :root{
 /*Color scheme*/
+--clr-accent-100: #fff;
+
 --clr-primary-300: #DDEEDF;/*Colors close to main color*/
 --clr-primary-400: #B6CDBD;/*Main color*/
 
@@ -30,12 +32,12 @@
 /*Font sizes*/
 
 
---fs-400: 1,25 rem; /*Main font size, 1 rem=16px*/
---fs-500: 2 rem;
---fs-600: 2,25 rem;
---fs-700: 2,5 rem;
---fs-800: 3 rem; 
---fs-900: 6 rem; /*Other font sizes, 900 for biggest, 100 for smallest*/
+--fs-400: 20px; /*Main font size, 1 rem=16px*/
+--fs-500: 32px;
+--fs-600: 36px;
+--fs-700: 40px;
+--fs-800: 48px; 
+--fs-900: 96px; /*Other font sizes, 900 for biggest, 100 for smallest*/
 
 --fs-body: var(--fs-400); /*Font size for elements*/
 --fs-primary-heading: var(--fs-900); /*Font size for heading*/
@@ -212,10 +214,14 @@ textarea:not([rows]) {
   font-size: var(--fs-900);
 }
 
-h1,h2,h3,h4{
+h1{
   font-family: var(--ff-heading);
 }
 
+h2,h3,h4{
+  font-family: var(--ff-heading);
+  color: var(--clr-neutral-900);
+}
 .body-x{
   font-family: var(--ff-body);
   font-size: var(--fs-body);
@@ -232,12 +238,21 @@ nav{
   font-size: var(--fs-nav);
 }
 
-@media(max-width: 1000px){ /*When changing to mobile, we might have to adjust some things*/
+@media(max-width: 500px){
+  .main-heading{
+    background-image: url('img/telephone-bg.png');
+  }
+}
+
+@media(min-width: 500px) and (max-width: 1000px){ /*When changing to mobile, we might have to adjust some things*/
   .showOnDesktop{
     display: none;
   }
   .showOnMobile{
     display: flex;
+  }
+  .main-heading{
+    background-image: url('img/mobile-background.png');
   }
 }
 
@@ -247,6 +262,9 @@ nav{
   }
   .showOnMobile{
     display: none;
+  }
+  .main-heading{
+    background-image: url('img/heading-background.jpg');
   }
 }
 
@@ -268,3 +286,17 @@ li{
   border-radius: 16px
 }
 
+.main-heading{
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--clr-accent-100);
+  text-align: center;
+}
+
+.h1-x{
+  font-size: var(--fs-primary-heading);
+}
+
+.main-heading-p{
+  font-size: var(--fs-700);
+}
