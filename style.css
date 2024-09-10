@@ -345,3 +345,7 @@ li{
   text-decoration: none; 
   color: inherit;
 }
+
+.videos{
+  background-color: var(--clr-primary-300);
+}
