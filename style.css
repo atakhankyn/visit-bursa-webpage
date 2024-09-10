@@ -32,7 +32,7 @@
 /*Font sizes*/
 
 
---fs-400: 20px; /*Main font size, 1 rem=16px*/
+--fs-400: 16px; /*Main font size, 1 rem=16px*/
 --fs-500: 32px;
 --fs-600: 36px;
 --fs-700: 40px;
@@ -238,13 +238,17 @@ nav{
   font-size: var(--fs-nav);
 }
 
-@media(max-width: 500px){
-  .main-heading{
-    background-image: url('img/telephone-bg.png');
-  }
-}
 
-@media(min-width: 500px) and (max-width: 1000px){ /*When changing to mobile, we might have to adjust some things*/
+@media(max-width: 1000px){ /*When changing to mobile, we might have to adjust some things*/
+  :root{
+    --fs-400: 14px; /*Main font size, 1 rem=16px*/
+    --fs-500: 24px;
+    --fs-600: 27px;
+    --fs-700: 30px;
+    --fs-800: 36px; 
+    --fs-900: 72px;  
+  }
+  
   .showOnDesktop{
     display: none;
   }
@@ -299,4 +303,15 @@ li{
 
 .main-heading-p{
   font-size: var(--fs-700);
+}
+
+.place-photos{
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.places{
+  background-color: var(--clr-primary-300);
+  border-radius: 20px;
 }
