@@ -31,7 +31,7 @@
 
 /*Font sizes*/
 
-
+--fs-300: 13px;
 --fs-400: 16px; /*Main font size, 1 rem=16px*/
 --fs-500: 32px;
 --fs-600: 36px;
@@ -260,6 +260,12 @@ nav{
   }
 }
 
+@media (min-width: 768px) and (max-width: 995px) {
+  .h4-x{
+    font-size:medium;
+  }
+}
+
 @media(min-width: 1000px){ /*When changing to mobile, we might have to adjust some things*/
   .showOnDesktop{
     display: flex;
@@ -314,4 +320,28 @@ li{
 .places{
   background-color: var(--clr-primary-300);
   border-radius: 20px;
+}
+
+.concerts{
+  background-color: var(--clr-primary-300);
+  border-radius: 20px;
+  font-size: var(--fs-300);
+  text-decoration: none; 
+  color: inherit;
+}
+
+.concert-photos{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.places:hover{
+  background-color: var(--clr-primary-400);
+}
+
+.concerts:hover{
+  scale: 1.1;
+  background-color: var(--clr-primary-400);
+  text-decoration: none; 
+  color: inherit;
 }
