@@ -256,7 +256,7 @@ nav{
     display: flex;
   }
   .main-heading{
-    background-image: url('img/mobile-background.png');
+    background-image: url('img/bg-view-mobile.png');
   }
 }
 
@@ -348,4 +348,12 @@ li{
 
 .videos{
   background-color: var(--clr-primary-300);
+}
+
+.explore-button{
+  background-color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-800);
+  font-weight: var(--fw-bold);
+  border-radius: 20px;
 }
